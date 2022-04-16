@@ -1,0 +1,10 @@
+sudo nano /etc/network/interfaces
+iface enp0s3 inet static
+  address 20.30.40.2/24
+iface enp0s3 inet static
+  address 20.30.30.23/24
+iface enp0s3 inet static
+  address 20.30.40.25/24
+iface enp0s3 inet static
+  address 20.30.40.80/24
+sudo ifdown enp0s3 && sudo ifup enp0s3
